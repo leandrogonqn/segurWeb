@@ -11,7 +11,7 @@
                 <div class="form-group">
                     <asp:Label ID="lblNombre" runat="server" Text="Nombre:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="txtnombre" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <asp:Label ID="lblApellido" runat="server" Text="Apellido:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-4">
@@ -43,7 +43,7 @@
 
                 <div class="form-group">
                     <asp:Label ID="lblEmail" runat="server" Text="Correo electrónico:" CssClass="col-md-2 control-label"></asp:Label>
-                    <div class="col-md-10">
+                    <div class="col-md-4">
                         <asp:TextBox ID="txtEmail" type="email" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
@@ -64,5 +64,5 @@
 
             </div>
         </div>
-    </div>
+  
 </asp:Content>
