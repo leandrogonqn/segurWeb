@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AltaClientes.aspx" />
+    <Content Include="AltaPolizas.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="AltaClientes.aspx.designer.cs">
       <DependentUpon>AltaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPolizas.aspx.cs">
+      <DependentUpon>AltaPolizas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaPolizas.aspx.designer.cs">
+      <DependentUpon>AltaPolizas.aspx</DependentUpon>
     </Compile>
     <Compile Include="AltaVehiculos.aspx.cs">
       <DependentUpon>AltaVehiculos.aspx</DependentUpon>

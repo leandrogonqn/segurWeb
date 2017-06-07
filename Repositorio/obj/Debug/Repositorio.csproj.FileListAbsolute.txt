@@ -14,3 +14,11 @@ C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWe
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.dll
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\Debug\Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\Debug\Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.pdb

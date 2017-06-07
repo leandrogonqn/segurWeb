@@ -20,3 +20,14 @@ C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWe
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Negocio\obj\Debug\Negocio.dll
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Negocio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Repositorio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\Repositorio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.pdb

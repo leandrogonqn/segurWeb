@@ -84,3 +84,46 @@ C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWe
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\ApplicationInsights.config
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\csc.exe
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\vbc.exe
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\VBCSCompiler.exe
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Presentacion.dll.config
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Presentacion.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Presentacion.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\EntityFramework.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\EntityFramework.SqlServer.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.Web.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Negocio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Repositorio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Negocio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\EntityFramework.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\EntityFramework.SqlServer.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.Web.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\Repositorio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.pdb

@@ -18,5 +18,10 @@ namespace Negocio
         {
             clientesRepo.GuardarClientes(cliente);
         }
+
+        public List<Clientes> ListarClientes()
+        {
+            return clientesRepo.ListarCliente();
+        }
     }
 }

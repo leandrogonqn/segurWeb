@@ -17,3 +17,13 @@ C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWe
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.dll
 C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\Dominio.pdb
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\EntityFramework.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\EntityFramework.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.dll
+C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.pdb
