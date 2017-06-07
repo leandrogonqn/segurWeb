@@ -7,3 +7,13 @@ c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\E
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\obj\Debug\Dominio.dll
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\obj\Debug\Dominio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\Dominio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\Dominio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\EntityFramework.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\EntityFramework.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Dominio\obj\Debug\Dominio.pdb

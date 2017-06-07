@@ -6,3 +6,11 @@ c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Deb
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\EntityFramework.xml
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\obj\Debug\Repositorio.dll
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\bin\Debug\Dominio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\bin\Debug\Dominio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Repositorio\obj\Debug\Repositorio.pdb

@@ -30,7 +30,7 @@ namespace Presentacion
             vehiculos.vehiculoAnio = int.Parse(txtAño.Text);
             vehiculos.vehiculoNumeroChasis = txtNumeroChasis.Text;
             vehiculos.vehiculoNumeroMotor = txtNumeroMotor.Text;
-            vehiculos.modeloId = int.Parse(txtPruebaModelo.Text);
+            //vehiculos.modeloId = int.Parse(txtPruebaModelo.Text);
             vehiculos.vehiculoEstado = 1;
 
             vehiculoNego.GuardarVehiculos(vehiculos);
@@ -46,7 +46,7 @@ namespace Presentacion
             //    context.Vehiculos.Add(vehiculos);
             //    context.SaveChanges();
             //}
-                
+
 
             //try
             //{

@@ -41,3 +41,46 @@ c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Re
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Dominio.pdb
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Negocio.pdb
 c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Repositorio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\ApplicationInsights.config
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\csc.exe
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\vbc.exe
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\VBCSCompiler.exe
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Presentacion.dll.config
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Presentacion.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Presentacion.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Dominio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\EntityFramework.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\EntityFramework.SqlServer.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.Web.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.ApplicationInsights.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Negocio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Repositorio.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Dominio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Negocio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\EntityFramework.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\EntityFramework.SqlServer.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.Web.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.ApplicationInsights.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\bin\Repositorio.pdb
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\maria\Dropbox\Analista En Sistemas\Tercer Año\Programacion WEB\segurWeb\Presentacion\obj\Debug\Presentacion.pdb
