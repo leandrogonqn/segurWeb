@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="segurosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="clienteId" />
+    </Key>
+    <Property Name="clienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clienteApellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clienteNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clienteDni" Type="Int32" />
+    <Property Name="clienteFechaNacimiento" Type="DateTime" Precision="3" />
+    <Property Name="clienteDomicilio" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clienteTelefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="clienteMail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clienteEstado" Type="Int32" />
+    <NavigationProperty Name="Polizas" Relationship="Self.FK__Polizas__cliente__1A14E395" FromRole="Clientes" ToRole="Polizas" />
+  </EntityType>
+  <EntityType Name="Companias">
+    <Key>
+      <PropertyRef Name="companiaId" />
+    </Key>
+    <Property Name="companiaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companiaDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="comapniaEstado" Type="Int32" />
+    <NavigationProperty Name="Polizas" Relationship="Self.FK__Polizas__compani__1B0907CE" FromRole="Companias" ToRole="Polizas" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="marcaId" />
+    </Key>
+    <Property Name="marcaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="marcaDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="marcaEstado" Type="Int32" />
+    <NavigationProperty Name="Modelos" Relationship="Self.FK__Modelos__marcaId__182C9B23" FromRole="Marcas" ToRole="Modelos" />
+  </EntityType>
+  <EntityType Name="Modelos">
+    <Key>
+      <PropertyRef Name="modeloId" />
+    </Key>
+    <Property Name="modeloId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="modeloDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="marcaId" Type="Int32" />
+    <Property Name="tipoVehiculoId" Type="Int32" />
+    <Property Name="modeloEstado" Type="Int32" />
+    <NavigationProperty Name="Marcas" Relationship="Self.FK__Modelos__marcaId__182C9B23" FromRole="Modelos" ToRole="Marcas" />
+    <NavigationProperty Name="TipoVehiculos" Relationship="Self.FK__Modelos__tipoVeh__1920BF5C" FromRole="Modelos" ToRole="TipoVehiculos" />
+    <NavigationProperty Name="Vehiculos" Relationship="Self.FK__Vehiculos__model__1CF15040" FromRole="Modelos" ToRole="Vehiculos" />
+  </EntityType>
+  <EntityType Name="Polizas">
+    <Key>
+      <PropertyRef Name="polizaId" />
+    </Key>
+    <Property Name="polizaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vehiculoId" Type="Int32" />
+    <Property Name="clienteId" Type="Int32" />
+    <Property Name="polizaFechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="polizaFechaVigencia" Type="DateTime" Precision="3" />
+    <Property Name="polizaFechaBaja" Type="DateTime" Precision="3" />
+    <Property Name="companiaId" Type="Int32" />
+    <Property Name="polizaEstado" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Polizas__cliente__1A14E395" FromRole="Polizas" ToRole="Clientes" />
+    <NavigationProperty Name="Companias" Relationship="Self.FK__Polizas__compani__1B0907CE" FromRole="Polizas" ToRole="Companias" />
+    <NavigationProperty Name="Vehiculos" Relationship="Self.FK__Polizas__vehicul__1BFD2C07" FromRole="Polizas" ToRole="Vehiculos" />
+  </EntityType>
+  <EntityType Name="TipoVehiculos">
+    <Key>
+      <PropertyRef Name="tipoVehiculosId" />
+    </Key>
+    <Property Name="tipoVehiculosId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipoVehiculoDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tipoVehiculoEstado" Type="Int32" />
+    <NavigationProperty Name="Modelos" Relationship="Self.FK__Modelos__tipoVeh__1920BF5C" FromRole="TipoVehiculos" ToRole="Modelos" />
+  </EntityType>
+  <EntityType Name="Vehiculos">
+    <Key>
+      <PropertyRef Name="vehiculoId" />
+    </Key>
+    <Property Name="vehiculoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vehiculoDominio" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vehiculoAnio" Type="Int32" />
+    <Property Name="vehiculoNumeroChasis" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="vehiculoNumeroMotor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="modeloId" Type="Int32" />
+    <Property Name="vehiculoEstado" Type="Int32" />
+    <NavigationProperty Name="Modelos" Relationship="Self.FK__Vehiculos__model__1CF15040" FromRole="Vehiculos" ToRole="Modelos" />
+    <NavigationProperty Name="Polizas" Relationship="Self.FK__Polizas__vehicul__1BFD2C07" FromRole="Vehiculos" ToRole="Polizas" />
+  </EntityType>
+  <Association Name="FK__Polizas__cliente__1A14E395">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Polizas" Type="Self.Polizas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="clienteId" />
+      </Principal>
+      <Dependent Role="Polizas">
+        <PropertyRef Name="clienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Polizas__compani__1B0907CE">
+    <End Role="Companias" Type="Self.Companias" Multiplicity="0..1" />
+    <End Role="Polizas" Type="Self.Polizas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companias">
+        <PropertyRef Name="companiaId" />
+      </Principal>
+      <Dependent Role="Polizas">
+        <PropertyRef Name="companiaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Modelos__marcaId__182C9B23">
+    <End Role="Marcas" Type="Self.Marcas" Multiplicity="0..1" />
+    <End Role="Modelos" Type="Self.Modelos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marcas">
+        <PropertyRef Name="marcaId" />
+      </Principal>
+      <Dependent Role="Modelos">
+        <PropertyRef Name="marcaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Modelos__tipoVeh__1920BF5C">
+    <End Role="TipoVehiculos" Type="Self.TipoVehiculos" Multiplicity="0..1" />
+    <End Role="Modelos" Type="Self.Modelos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoVehiculos">
+        <PropertyRef Name="tipoVehiculosId" />
+      </Principal>
+      <Dependent Role="Modelos">
+        <PropertyRef Name="tipoVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehiculos__model__1CF15040">
+    <End Role="Modelos" Type="Self.Modelos" Multiplicity="0..1" />
+    <End Role="Vehiculos" Type="Self.Vehiculos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modelos">
+        <PropertyRef Name="modeloId" />
+      </Principal>
+      <Dependent Role="Vehiculos">
+        <PropertyRef Name="modeloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Polizas__vehicul__1BFD2C07">
+    <End Role="Vehiculos" Type="Self.Vehiculos" Multiplicity="0..1" />
+    <End Role="Polizas" Type="Self.Polizas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehiculos">
+        <PropertyRef Name="vehiculoId" />
+      </Principal>
+      <Dependent Role="Polizas">
+        <PropertyRef Name="vehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="segurosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Companias" EntityType="Self.Companias" />
+    <EntitySet Name="Marcas" EntityType="Self.Marcas" />
+    <EntitySet Name="Modelos" EntityType="Self.Modelos" />
+    <EntitySet Name="Polizas" EntityType="Self.Polizas" />
+    <EntitySet Name="TipoVehiculos" EntityType="Self.TipoVehiculos" />
+    <EntitySet Name="Vehiculos" EntityType="Self.Vehiculos" />
+    <AssociationSet Name="FK__Polizas__cliente__1A14E395" Association="Self.FK__Polizas__cliente__1A14E395">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Polizas" EntitySet="Polizas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Polizas__compani__1B0907CE" Association="Self.FK__Polizas__compani__1B0907CE">
+      <End Role="Companias" EntitySet="Companias" />
+      <End Role="Polizas" EntitySet="Polizas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Modelos__marcaId__182C9B23" Association="Self.FK__Modelos__marcaId__182C9B23">
+      <End Role="Marcas" EntitySet="Marcas" />
+      <End Role="Modelos" EntitySet="Modelos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Modelos__tipoVeh__1920BF5C" Association="Self.FK__Modelos__tipoVeh__1920BF5C">
+      <End Role="TipoVehiculos" EntitySet="TipoVehiculos" />
+      <End Role="Modelos" EntitySet="Modelos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehiculos__model__1CF15040" Association="Self.FK__Vehiculos__model__1CF15040">
+      <End Role="Modelos" EntitySet="Modelos" />
+      <End Role="Vehiculos" EntitySet="Vehiculos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Polizas__vehicul__1BFD2C07" Association="Self.FK__Polizas__vehicul__1BFD2C07">
+      <End Role="Vehiculos" EntitySet="Vehiculos" />
+      <End Role="Polizas" EntitySet="Polizas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

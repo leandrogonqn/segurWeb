@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Presentacion.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <form id="form1" runat="server">
+
+        <div>
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Seguros</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Inicio.aspx">Inicio</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Crear Clientes</a></li>
+                                <li><a href="#">Listar Clientes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vehiculos<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AltaVehiculos.aspx">Crear Vehiculos</a></li>
+                                <li><a href="ListarVehiculos.aspx">Listar vehiculos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Polizas <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Crear Polizas</a></li>
+                                <li><a href="#">Listar Polizas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>

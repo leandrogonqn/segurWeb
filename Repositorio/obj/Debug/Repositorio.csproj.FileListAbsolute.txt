@@ -1,0 +1,8 @@
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\Repositorio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\Repositorio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\Dominio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\Dominio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\bin\Debug\EntityFramework.xml
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\obj\Debug\Repositorio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Repositorio\obj\Debug\Repositorio.pdb

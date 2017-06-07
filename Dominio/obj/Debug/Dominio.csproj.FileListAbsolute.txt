@@ -1,0 +1,9 @@
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\Dominio.dll.config
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\Dominio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\Dominio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\EntityFramework.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\EntityFramework.xml
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\obj\Debug\Dominio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Dominio\obj\Debug\Dominio.pdb

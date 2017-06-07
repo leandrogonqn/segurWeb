@@ -1,0 +1,11 @@
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Negocio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Negocio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Dominio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Repositorio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\EntityFramework.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Dominio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\Repositorio.pdb
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\bin\Debug\EntityFramework.xml
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\obj\Debug\Negocio.dll
+c:\users\lean\documents\visual studio 2015\Projects\SegurWeb\Negocio\obj\Debug\Negocio.pdb

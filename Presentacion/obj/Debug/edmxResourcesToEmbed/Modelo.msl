@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="segurosModelStoreContainer" CdmEntityContainer="segurosEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="segurosModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="clienteId" ColumnName="clienteId" />
+          <ScalarProperty Name="clienteApellido" ColumnName="clienteApellido" />
+          <ScalarProperty Name="clienteNombre" ColumnName="clienteNombre" />
+          <ScalarProperty Name="clienteDni" ColumnName="clienteDni" />
+          <ScalarProperty Name="clienteFechaNacimiento" ColumnName="clienteFechaNacimiento" />
+          <ScalarProperty Name="clienteDomicilio" ColumnName="clienteDomicilio" />
+          <ScalarProperty Name="clienteTelefono" ColumnName="clienteTelefono" />
+          <ScalarProperty Name="clienteMail" ColumnName="clienteMail" />
+          <ScalarProperty Name="clienteEstado" ColumnName="clienteEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companias">
+      <EntityTypeMapping TypeName="segurosModel.Companias">
+        <MappingFragment StoreEntitySet="Companias">
+          <ScalarProperty Name="companiaId" ColumnName="companiaId" />
+          <ScalarProperty Name="companiaDescripcion" ColumnName="companiaDescripcion" />
+          <ScalarProperty Name="comapniaEstado" ColumnName="comapniaEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="segurosModel.Marcas">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="marcaId" ColumnName="marcaId" />
+          <ScalarProperty Name="marcaDescripcion" ColumnName="marcaDescripcion" />
+          <ScalarProperty Name="marcaEstado" ColumnName="marcaEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modelos">
+      <EntityTypeMapping TypeName="segurosModel.Modelos">
+        <MappingFragment StoreEntitySet="Modelos">
+          <ScalarProperty Name="modeloId" ColumnName="modeloId" />
+          <ScalarProperty Name="modeloDescripcion" ColumnName="modeloDescripcion" />
+          <ScalarProperty Name="marcaId" ColumnName="marcaId" />
+          <ScalarProperty Name="tipoVehiculoId" ColumnName="tipoVehiculoId" />
+          <ScalarProperty Name="modeloEstado" ColumnName="modeloEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Polizas">
+      <EntityTypeMapping TypeName="segurosModel.Polizas">
+        <MappingFragment StoreEntitySet="Polizas">
+          <ScalarProperty Name="polizaId" ColumnName="polizaId" />
+          <ScalarProperty Name="vehiculoId" ColumnName="vehiculoId" />
+          <ScalarProperty Name="clienteId" ColumnName="clienteId" />
+          <ScalarProperty Name="polizaFechaAlta" ColumnName="polizaFechaAlta" />
+          <ScalarProperty Name="polizaFechaVigencia" ColumnName="polizaFechaVigencia" />
+          <ScalarProperty Name="polizaFechaBaja" ColumnName="polizaFechaBaja" />
+          <ScalarProperty Name="companiaId" ColumnName="companiaId" />
+          <ScalarProperty Name="polizaEstado" ColumnName="polizaEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoVehiculos">
+      <EntityTypeMapping TypeName="segurosModel.TipoVehiculos">
+        <MappingFragment StoreEntitySet="TipoVehiculos">
+          <ScalarProperty Name="tipoVehiculosId" ColumnName="tipoVehiculosId" />
+          <ScalarProperty Name="tipoVehiculoDescripcion" ColumnName="tipoVehiculoDescripcion" />
+          <ScalarProperty Name="tipoVehiculoEstado" ColumnName="tipoVehiculoEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehiculos">
+      <EntityTypeMapping TypeName="segurosModel.Vehiculos">
+        <MappingFragment StoreEntitySet="Vehiculos">
+          <ScalarProperty Name="vehiculoId" ColumnName="vehiculoId" />
+          <ScalarProperty Name="vehiculoDominio" ColumnName="vehiculoDominio" />
+          <ScalarProperty Name="vehiculoAnio" ColumnName="vehiculoAnio" />
+          <ScalarProperty Name="vehiculoNumeroChasis" ColumnName="vehiculoNumeroChasis" />
+          <ScalarProperty Name="vehiculoNumeroMotor" ColumnName="vehiculoNumeroMotor" />
+          <ScalarProperty Name="modeloId" ColumnName="modeloId" />
+          <ScalarProperty Name="vehiculoEstado" ColumnName="vehiculoEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
