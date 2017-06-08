@@ -20,6 +20,7 @@ namespace Repositorio
             }
         }
 
+<<<<<<< HEAD
         public List<Vehiculos> listarVehiculos()
         {
             List<Vehiculos> vehiculosList = new List<Vehiculos>();
@@ -35,6 +36,41 @@ namespace Repositorio
             }
             return vehiculosList;
 
+=======
+        public List<Vehiculos> LlenarComboVehiculo()
+        {
+            List<Vehiculos> vehiculoList = new List<Vehiculos>();
+
+            using (var context = new segurosEntities())
+            {
+
+                var query = from c in context.Vehiculos
+                            select c;
+                foreach (var item in query)
+                {
+                    vehiculoList.Add(item);
+                }
+
+            }
+            return vehiculoList;
+        }
+
+        public List<Vehiculos> ListarVehiculos()
+        {
+            List<Vehiculos> vehiculoList = new List<Vehiculos>();
+            using (var context = new segurosEntities())
+            {
+
+                var query = from c in context.Vehiculos
+                            select c;
+                foreach (var item in query)
+                {
+                    vehiculoList.Add(item);
+                }
+
+            }
+            return vehiculoList;
+>>>>>>> desarrollo
         }
 
     }

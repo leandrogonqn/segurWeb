@@ -24,8 +24,12 @@ namespace Presentacion
 
         private void CargarGrilla()
         {
+<<<<<<< HEAD
             gdvVehiculos.AutoGenerateColumns = false;
             gdvVehiculos.DataSource = vehiculosNego.listarVehiculos();
+=======
+            gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
+>>>>>>> desarrollo
             gdvVehiculos.DataBind();
 
             //gdvVehiculos.DataSource = CargarProductosDT();
