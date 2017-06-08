@@ -49,22 +49,22 @@ namespace Presentacion {
         protected global::System.Web.UI.WebControls.TextBox txtAño;
         
         /// <summary>
-        /// Control lblPruebaModelo.
+        /// Control ddlMarca.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPruebaModelo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMarca;
         
         /// <summary>
-        /// Control txtPruebaModelo.
+        /// Control ddlModelo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPruebaModelo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlModelo;
         
         /// <summary>
         /// Control lblNumeroMotor.

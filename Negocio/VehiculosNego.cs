@@ -17,15 +17,12 @@ namespace Negocio
         {
             vehiculosRepo.GuardarVehiculos(vehiculo);
         }
-
-<<<<<<< HEAD
-        public List<Vehiculos> listarVehiculos()
-=======
+        
         public List<Vehiculos> CargarComboVehiculo()
->>>>>>> desarrollo
         {
             return vehiculosRepo.LlenarComboVehiculo();
         }
+
         public List<Vehiculos> ListarVehiculos()
         {
             return vehiculosRepo.ListarVehiculos();

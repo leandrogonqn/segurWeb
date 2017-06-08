@@ -20,7 +20,6 @@ namespace Repositorio
             }
         }
 
-<<<<<<< HEAD
         public List<Vehiculos> listarVehiculos()
         {
             List<Vehiculos> vehiculosList = new List<Vehiculos>();
@@ -35,8 +34,8 @@ namespace Repositorio
 
             }
             return vehiculosList;
+        }
 
-=======
         public List<Vehiculos> LlenarComboVehiculo()
         {
             List<Vehiculos> vehiculoList = new List<Vehiculos>();
@@ -70,7 +69,6 @@ namespace Repositorio
 
             }
             return vehiculoList;
->>>>>>> desarrollo
         }
 
     }

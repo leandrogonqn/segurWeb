@@ -18,22 +18,14 @@
                     </div>
                 </div>
 
-                <%--Modulo para reemplazar el ddl para Prueba--%>
                 <div class="form-group">
-                    <asp:Label ID="lblPruebaModelo" runat="server" Text="Modelo:" CssClass="control-label col-md-6"></asp:Label>
-                    <div class="col-md-6">
-                        <asp:TextBox ID="txtPruebaModelo" runat="server" CssClass="form-control"></asp:TextBox>
-                    </div>
-                </div>
-
-                <%--                <div class="form-group">
                     <div class="col-md-6">
                         <asp:dropdownlist id="ddlMarca" runat="server" enabled="true" cssclass="form-control" autopostback="true"></asp:dropdownlist>
                     </div>
                     <div class="col-md-6">
                         <asp:dropdownlist id="ddlModelo" runat="server" enabled="true" cssclass="form-control" autopostback="true"></asp:dropdownlist>
                     </div>
-                </div>--%>
+                </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblNumeroMotor" runat="server" Text="Numero de Motor:" CssClass="control-label col-md-3"></asp:Label>

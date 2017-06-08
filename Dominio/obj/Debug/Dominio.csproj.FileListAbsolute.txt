@@ -27,3 +27,4 @@ C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\bin\Debug\
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.dll
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Lean\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
