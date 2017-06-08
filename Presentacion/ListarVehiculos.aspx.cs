@@ -24,8 +24,17 @@ namespace Presentacion
 
         private void CargarGrilla()
         {
+            gdvVehiculos.AutoGenerateColumns = false;
             gdvVehiculos.DataSource = vehiculosNego.listarVehiculos();
             gdvVehiculos.DataBind();
+
+            //gdvVehiculos.DataSource = CargarProductosDT();
+
+            ////Tamaño de cada columna
+            //foreach (DataGridViewColumn columna in DatosDtDG.Columns)
+            //{
+            //    columna.Width = 118;
+            //}
         }
 
         protected void gdvVehiculos_RowCommand(object sender, GridViewCommandEventArgs e)

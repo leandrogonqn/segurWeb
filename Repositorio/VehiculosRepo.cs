@@ -20,27 +20,22 @@ namespace Repositorio
             }
         }
 
-        public IQueryable<Vehiculos> listarVehiculos()
+        public List<Vehiculos> listarVehiculos()
         {
-            using (segurosEntities context = new segurosEntities())
+            List<Vehiculos> vehiculosList = new List<Vehiculos>();
+
+            using (var context = new segurosEntities())
             {
-                DataTable dt = new DataTable();
+                var query = from v in context.Vehiculos select v;
+                foreach (var item in query)
+                {
+                    vehiculosList.Add(item);
+                }
 
-                var contrat = from Vehiculos in context.Vehiculos select Vehiculos;
-
-                //conexion.ConnectionString = datosConexion;
-
-                //conexion.Open();
-
-                //string query = "select * from Personas inner join Turnos on Turnos.personaId = Personas.personasId";
-
-                //SqlCommand cmd = new SqlCommand(query, conexion);
-                //SqlDataAdapter da = new SqlDataAdapter(cmd);
-                //da.Fill(dt);
-                //conexion.Close();
             }
-            return null;
+            return vehiculosList;
 
         }
+
     }
 }

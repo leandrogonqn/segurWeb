@@ -18,7 +18,7 @@ namespace Negocio
             vehiculosRepo.GuardarVehiculos(vehiculo);
         }
 
-        public IQueryable listarVehiculos()
+        public List<Vehiculos> listarVehiculos()
         {
             return vehiculosRepo.listarVehiculos();
         }
