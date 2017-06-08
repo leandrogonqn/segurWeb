@@ -18,7 +18,7 @@ namespace Presentacion
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
-            CargarCombos();
+            CargarCombosMarca();
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -45,13 +45,8 @@ namespace Presentacion
 
         }
 
-        private void CargarCombos()
+        private void CargarCombosMarca()
         {
-            ddlModelo.DataSource = modeloNego.CargarComboModelo();
-            ddlModelo.DataTextField = "modeloDescripcion";
-            ddlModelo.DataValueField = "modeloId";
-            ddlModelo.DataBind();
-            ddlModelo.Items.Insert(0, "Seleccione un modelo");
 
             ddlMarca.DataSource = marcaNego.CargarComboMarca();
             ddlMarca.DataTextField = "marcaDescripcion";
@@ -59,6 +54,26 @@ namespace Presentacion
             ddlMarca.DataBind();
             ddlMarca.Items.Insert(0, "Seleccione una marca");
 
+            
+
+
+        }
+
+        private void CargarCombosModelos(int marcaId)
+        {
+            ddlModelo.DataSource = modeloNego.CargarComboModelo(marcaId);
+            ddlModelo.DataTextField = "modeloDescripcion";
+            ddlModelo.DataValueField = "modeloId";
+            ddlModelo.DataBind();
+            ddlModelo.Items.Insert(0, "Seleccione un modelo");
+
+        }
+
+        protected void ddlMarca_TextChanged(object sender, EventArgs e)
+        {
+            int marcaId = int.Parse(ddlMarca.SelectedItem.Value);
+            CargarCombosModelos(marcaId);
+            ddlModelo.Enabled = true;
         }
     }
 }

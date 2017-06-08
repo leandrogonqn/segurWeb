@@ -12,9 +12,9 @@ namespace Negocio
     {
         ModeloRepo modeloRepo = new ModeloRepo();
 
-        public List<Modelos> CargarComboModelo()
+        public List<Modelos> CargarComboModelo(int marcaId)
         {
-            return modeloRepo.CargarComboModelo();
+            return modeloRepo.CargarComboModelo(marcaId);
         }
     }
 }
