@@ -24,7 +24,7 @@ namespace Presentacion
 
         private void CargarGrilla()
         {
-            gdvVehiculos.DataSource = vehiculosNego.listarVehiculos();
+            gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
             gdvVehiculos.DataBind();
         }
 

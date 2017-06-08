@@ -18,9 +18,13 @@ namespace Negocio
             vehiculosRepo.GuardarVehiculos(vehiculo);
         }
 
-        public IQueryable listarVehiculos()
+        public List<Vehiculos> CargarComboVehiculo()
         {
-            return vehiculosRepo.listarVehiculos();
+            return vehiculosRepo.LlenarComboVehiculo();
+        }
+        public List<Vehiculos> ListarVehiculos()
+        {
+            return vehiculosRepo.ListarVehiculos();
         }
     }
 }

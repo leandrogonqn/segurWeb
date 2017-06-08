@@ -18,7 +18,8 @@ namespace Repositorio
                 context.SaveChanges();
             }
         }
-        public List<Clientes> ListarCliente()
+
+        public List<Clientes> ListarClientes()
         {
             List<Clientes> clientesList = new List<Clientes>();
 
@@ -34,7 +35,24 @@ namespace Repositorio
 
             }
             return clientesList;
+        }
 
+        public List<Clientes> LlenarComboCliente()
+        {
+            List<Clientes> clientesList = new List<Clientes>();
+
+            using (var context = new segurosEntities())
+            {
+
+                var query = from c in context.Clientes
+                            select c;
+                foreach (var item in query)
+                {
+                    clientesList.Add(item);
+                }
+
+            }
+            return clientesList;
         }
     }
 }

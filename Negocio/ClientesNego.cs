@@ -19,9 +19,9 @@ namespace Negocio
             clientesRepo.GuardarClientes(cliente);
         }
 
-        public List<Clientes> ListarClientes()
+        public List<Clientes> LlenarComboCliente()
         {
-            return clientesRepo.ListarCliente();
+            return clientesRepo.LlenarComboCliente();
         }
     }
 }
