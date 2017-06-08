@@ -44,6 +44,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ClientesRepo.cs" />
     <Compile Include="CompaniaRepo.cs" />
+    <Compile Include="MarcaRepo.cs" />
+    <Compile Include="ModeloRepo.cs" />
     <Compile Include="PolizaRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehiculosRepo.cs" />

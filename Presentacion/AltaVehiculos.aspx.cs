@@ -12,10 +12,13 @@ namespace Presentacion
     public partial class AltaVehiculos : System.Web.UI.Page
     {
         VehiculosNego vehiculoNego = new VehiculosNego();
+        ModeloNego modeloNego = new ModeloNego();
+        MarcaNego marcaNego = new MarcaNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack) return;
+            CargarCombos();
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -30,46 +33,32 @@ namespace Presentacion
             vehiculos.vehiculoAnio = int.Parse(txtAño.Text);
             vehiculos.vehiculoNumeroChasis = txtNumeroChasis.Text;
             vehiculos.vehiculoNumeroMotor = txtNumeroMotor.Text;
-            //vehiculos.modeloId = int.Parse(txtPruebaModelo.Text);
+            vehiculos.modeloId = int.Parse(ddlModelo.SelectedItem.Value);
             vehiculos.vehiculoEstado = 1;
 
             vehiculoNego.GuardarVehiculos(vehiculos);
 
             txtDominio.Text = String.Empty;
             txtAño.Text = String.Empty;
-            txtPruebaModelo.Text = String.Empty;
             txtNumeroChasis.Text = String.Empty;
             txtNumeroMotor.Text = String.Empty;
 
-            //using (segurosEntities context = new segurosEntities())
-            //{
-            //    context.Vehiculos.Add(vehiculos);
-            //    context.SaveChanges();
-            //}
+        }
 
+        private void CargarCombos()
+        {
+            ddlModelo.DataSource = modeloNego.CargarComboModelo();
+            ddlModelo.DataTextField = "modeloDescripcion";
+            ddlModelo.DataValueField = "modeloId";
+            ddlModelo.DataBind();
+            ddlModelo.Items.Insert(0, "Seleccione un modelo");
 
-            //try
-            //{
-            //    //vehiculos.vehiculoDominio = txtDominio.Text;
-            //    //vehiculos.vehiculoAnio = int.Parse(txtAño.Text);
-            //    //vehiculos.vehiculoNumeroChasis = txtNumeroChasis.Text;
-            //    //vehiculos.vehiculoNumeroMotor = txtNumeroMotor.Text;
-            //    //vehiculos.modeloId = int.Parse(txtPruebaModelo.Text);
-            //    //vehiculos.vehiculoEstado = 1;
+            ddlMarca.DataSource = marcaNego.CargarComboMarca();
+            ddlMarca.DataTextField = "marcaDescripcion";
+            ddlMarca.DataValueField = "marcaId";
+            ddlMarca.DataBind();
+            ddlMarca.Items.Insert(0, "Seleccione una marca");
 
-            //    //vehiculosNego.GuardarVehiculos(vehiculos);
-
-            //    txtDominio.Text = String.Empty;
-            //    txtAño.Text = String.Empty;
-            //    txtPruebaModelo.Text = String.Empty;
-            //    txtNumeroChasis.Text = String.Empty;
-            //    txtNumeroMotor.Text = String.Empty;
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
         }
     }
 }

@@ -43,6 +43,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ClientesNego.cs" />
     <Compile Include="CompaniaNego.cs" />
+    <Compile Include="MarcaNego.cs" />
+    <Compile Include="ModeloNego.cs" />
     <Compile Include="PolizaNego.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehiculosNego.cs" />
