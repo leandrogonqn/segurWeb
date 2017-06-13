@@ -28,10 +28,14 @@ namespace Presentacion
         {
 
             Vehiculos vehiculo = vehiculosNego.BuscarVehiculo(vehiculoId);
+            Modelos modelos = modeloNego.BuscarModelo(vehiculo.modeloId);
+            Marcas marcas = marcaNego.BuscarMarca(modelos.marcaId);
+            CargarCombosModelos(marcas.marcaId);
 
             txtDominio.Text = vehiculo.vehiculoDominio.ToString();
             txtAño.Text = vehiculo.vehiculoAnio.ToString();
-            CargarCombosModelos(1);
+            ddlMarca.SelectedValue = marcas.marcaId.ToString();
+            ddlModelo.SelectedValue = modelos.modeloId.ToString();
             txtNumeroMotor.Text = vehiculo.vehiculoNumeroMotor.ToString();
             txtNumeroChasis.Text = vehiculo.vehiculoNumeroChasis.ToString();
 
@@ -56,7 +60,7 @@ namespace Presentacion
 
             vehiculosNego.ModificarVehiculo(vehiculos);
 
-            Response.Redirect("Inicio.aspx");
+            Response.Redirect("ListarVehiculos.aspx");
         }
 
         private void CargarCombosMarca()

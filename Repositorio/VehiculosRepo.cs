@@ -42,7 +42,7 @@ namespace Repositorio
             {
                 Vehiculos vehic = (from v in context.Vehiculos
                                    where v.vehiculoId == vehiculos.vehiculoId
-                             select v).FirstOrDefault();
+                                   select v).FirstOrDefault();
                 vehic.vehiculoDominio = vehiculos.vehiculoDominio;
                 vehic.vehiculoAnio = vehiculos.vehiculoAnio;
                 vehic.modeloId = vehiculos.modeloId;
@@ -52,7 +52,19 @@ namespace Repositorio
             }
         }
 
-        public Vehiculos BuscarVehiculo(int vehiculoId)
+        public void BorrarVehiculo(int vehiculoId)
+        {
+            using (segurosEntities context = new segurosEntities())
+            {
+                Vehiculos vehic = (from v in context.Vehiculos
+                                   where v.vehiculoId == vehiculoId
+                                   select v).FirstOrDefault();
+                vehic.vehiculoEstado = 0;
+                context.SaveChanges();
+            }
+        }
+
+        public Vehiculos BuscarVehiculo(int? vehiculoId)
         {
             Vehiculos vehiculo;
             using (segurosEntities context = new segurosEntities())
@@ -84,19 +96,33 @@ namespace Repositorio
             return vehiculoList;
         }
 
-        public List<Vehiculos> ListarVehiculos()
+        public List<object> ListarVehiculos()
         {
-            List<Vehiculos> vehiculoList = new List<Vehiculos>();
+            List<object> vehiculoList = new List<object>();
             using (var context = new segurosEntities())
             {
 
                 var query = from c in context.Vehiculos
-                            select c;
+                            join m in context.Modelos on c.modeloId equals m.modeloId
+                            join ma in context.Marcas on m.marcaId equals ma.marcaId
+                            join t in context.TipoVehiculos on m.tipoVehiculoId equals t.tipoVehiculosId
+                            where c.vehiculoEstado == 1
+                            select new
+                            {   
+                                c.vehiculoId,
+                                c.vehiculoDominio,
+                                c.vehiculoAnio,
+                                ma.marcaDescripcion,
+                                m.modeloDescripcion,
+                                c.vehiculoNumeroChasis,
+                                c.vehiculoNumeroMotor, 
+                                t.tipoVehiculoDescripcion
+                            };
                 foreach (var item in query)
                 {
                     vehiculoList.Add(item);
                 }
-
+                
             }
             return vehiculoList;
         }

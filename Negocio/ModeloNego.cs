@@ -16,5 +16,10 @@ namespace Negocio
         {
             return modeloRepo.CargarComboModelo(marcaId);
         }
+
+        public Modelos BuscarModelo(int? modeloId)
+        {
+            return modeloRepo.BuscarModelo(modeloId);
+        }
     }
 }

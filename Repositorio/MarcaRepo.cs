@@ -25,5 +25,19 @@ namespace Repositorio
             }
             return marcasList;
         }
+
+        public Marcas BuscarMarca(int? marcaId)
+        {
+            Marcas marcas;
+            using (segurosEntities context = new segurosEntities())
+            {
+
+                marcas = (from m in context.Marcas
+                           where m.marcaId == marcaId
+                           select m).FirstOrDefault();
+
+            }
+            return marcas;
+        }
     }
 }

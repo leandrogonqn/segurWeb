@@ -23,12 +23,12 @@ namespace Negocio
             return vehiculosRepo.LlenarComboVehiculo();
         }
 
-        public List<Vehiculos> ListarVehiculos()
+        public List<object> ListarVehiculos()
         {
             return vehiculosRepo.ListarVehiculos();
         }
 
-        public Vehiculos BuscarVehiculo(int vehiculoId)
+        public Vehiculos BuscarVehiculo(int? vehiculoId)
         {
             return vehiculosRepo.BuscarVehiculo(vehiculoId);
         }
@@ -36,6 +36,11 @@ namespace Negocio
         public void ModificarVehiculo(Vehiculos vehiculos)
         {
             vehiculosRepo.ModificarVehiculo(vehiculos);
+        }
+
+        public void BorrarVehiculo(int vehiculoId)
+        {
+            vehiculosRepo.BorrarVehiculo(vehiculoId);
         }
     }
 }

@@ -25,5 +25,19 @@ namespace Repositorio
             }
             return modelosList;
         }
+
+        public Modelos BuscarModelo(int? modeloId)
+        {
+            Modelos modelos;
+            using (segurosEntities context = new segurosEntities())
+            {
+
+                modelos = (from m in context.Modelos
+                            where m.modeloId == modeloId
+                            select m).FirstOrDefault();
+
+            }
+            return modelos;
+        }
     }
 }
