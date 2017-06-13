@@ -20,10 +20,10 @@
 
                 <div class="form-group">
                     <div class="col-md-6">
-                        <asp:dropdownlist id="ddlMarca" runat="server" enabled="true" cssclass="form-control" autopostback="true"></asp:dropdownlist>
+                        <asp:dropdownlist id="ddlMarca" runat="server" enabled="true" cssclass="form-control" OnTextChanged="ddlMarca_TextChanged" AutoPostBack="true"></asp:dropdownlist>
                     </div>
                     <div class="col-md-6">
-                        <asp:dropdownlist id="ddlModelo" runat="server" enabled="true" cssclass="form-control" autopostback="true"></asp:dropdownlist>
+                        <asp:dropdownlist id="ddlModelo" runat="server" enabled="false" cssclass="form-control" ></asp:dropdownlist>
                     </div>
                 </div>
                 

@@ -54,9 +54,6 @@ namespace Presentacion
             ddlMarca.DataBind();
             ddlMarca.Items.Insert(0, "Seleccione una marca");
 
-            
-
-
         }
 
         private void CargarCombosModelos(int marcaId)
