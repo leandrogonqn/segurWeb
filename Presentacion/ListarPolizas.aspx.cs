@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Negocio;
+using Dominio;
+
+namespace Presentacion
+{
+    public partial class ListarPolizas : System.Web.UI.Page
+    {
+        PolizaNego polizaNego = new PolizaNego();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (IsPostBack) return;
+            CargarGrilla();
+        }
+
+        protected void gdvPoliza_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "bntEliminar")
+            {
+                int polizaId = int.Parse(e.CommandArgument.ToString());
+                polizaNego.BajaPoliza(polizaId);
+            }
+
+        }
+
+
+        private void CargarGrilla()
+        {
+            gdvPoliza.AutoGenerateColumns = false;
+            gdvPoliza.DataSource = polizaNego.ListarPoliza();
+            gdvPoliza.DataBind();
+        }
+
+        protected void gdvPoliza_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow) {
+
+
+
+            }
+        }
+    }
+}

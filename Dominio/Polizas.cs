@@ -22,6 +22,7 @@ namespace Dominio
         public Nullable<System.DateTime> polizaFechaBaja { get; set; }
         public Nullable<int> companiaId { get; set; }
         public Nullable<int> polizaEstado { get; set; }
+        public string polizaNumero { get; set; }
     
         public virtual Clientes Clientes { get; set; }
         public virtual Companias Companias { get; set; }

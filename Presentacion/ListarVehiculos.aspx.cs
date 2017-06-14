@@ -19,15 +19,14 @@ namespace Presentacion
         {
             if (IsPostBack) return;
 
-            CargarGrilla();
+            //CargarGrilla();
         }
 
-        private void CargarGrilla()
-        {
-            gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
-            gdvVehiculos.DataBind();
-
-        }
+        //private void CargarGrilla()
+        //{
+        //    gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
+        //    gdvVehiculos.DataBind();
+        //}
 
         protected void gdvVehiculos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
@@ -37,13 +36,6 @@ namespace Presentacion
                 string pagina = "ModificarVehiculos.aspx?vehiculoId=" + vehiculoId;
                 Response.Redirect(pagina);
             }
-            if (e.CommandName == "Borrar")
-            {
-                int vehiculoId = int.Parse(e.CommandArgument.ToString());
-                vehiculosNego.BorrarVehiculo(vehiculoId);
-                CargarGrilla();
-            }
         }
-
     }
 }

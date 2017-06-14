@@ -85,6 +85,24 @@ namespace Presentacion {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl dtFechaVigencia;
         
         /// <summary>
+        /// Control lblPoliza.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPoliza;
+        
+        /// <summary>
+        /// Control txtPolizaNumero.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPolizaNumero;
+        
+        /// <summary>
         /// Control btnGuardar.
         /// </summary>
         /// <remarks>

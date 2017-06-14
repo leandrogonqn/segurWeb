@@ -15,5 +15,15 @@ namespace Negocio
         {
             polizaRepo.Guardar(poliza);
         }
+        public List<object> ListarPoliza()
+        {
+            return polizaRepo.ListarPolizas();
+        }
+
+        public void BajaPoliza(int polizaId)
+        {
+            polizaRepo.BajaPoliza(polizaId);
+        }
     }
+
 }

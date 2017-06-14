@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
+
     <div class="container">
 
         <div class="panel panel-primary">
@@ -29,6 +29,7 @@
                         <asp:DropDownList ID="ddlCliente" class="dropdown-header" runat="server"></asp:DropDownList>
                     </div>
 
+
                 </div>
                 <div class="form-group">
 
@@ -42,12 +43,17 @@
 
                     <div class="col-md-4">
                         <input id="dtFechaVigencia" runat="server" type="date" name="dtFechaVigencia" />
-
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-9">
-                            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" type="button" class="btn btn-primary" OnClick="btnGuardar_Click" />
-                        </div>
+  
+                </div>
+                <div class="form-group">
+                   <asp:Label ID="lblPoliza" class="col-md-2 control-label" runat="server" Text="Número Poliza: "></asp:Label>
+
+                    <div class="col-md-4">
+                        <asp:TextBox ID="txtPolizaNumero" runat="server"></asp:TextBox>
+                    </div>
+                    <div class="col-md-6 offseto">
+                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" type="button" class="btn btn-primary" OnClick="btnGuardar_Click" />
                     </div>
                 </div>
             </div>

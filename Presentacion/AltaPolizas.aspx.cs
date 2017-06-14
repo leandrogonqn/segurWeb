@@ -14,28 +14,35 @@ namespace Presentacion
         ClientesNego clienteNego = new ClientesNego();
         VehiculosNego vehiculoNego = new VehiculosNego();
         CompaniaNego companiaNego = new CompaniaNego();
+        PolizaNego polizaNego = new PolizaNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            CargarCombos();
+            if (IsPostBack) return;
+            CargarCombos();           
         }
 
 
 
         private void Guardar()
         {
+
             Polizas poliza = new Polizas();
             PolizaNego polizaNego = new PolizaNego();
-
-            poliza.clienteId = int.Parse(ddlCliente.DataValueField);
-            poliza.vehiculoId = int.Parse(ddlVehiculo.DataValueField);
-            poliza.companiaId = int.Parse(ddlcompania.DataValueField);
+   
+            poliza.clienteId = int.Parse(ddlCliente.SelectedItem.Value);
+            poliza.vehiculoId = int.Parse(ddlVehiculo.SelectedItem.Value);
+            poliza.companiaId = int.Parse(ddlcompania.SelectedItem.Value);
+            poliza.polizaNumero = txtPolizaNumero.Text;
             poliza.polizaFechaAlta = DateTime.Now;
             poliza.polizaFechaVigencia = Convert.ToDateTime(dtFechaVigencia.Value);
            poliza.polizaFechaBaja = DateTime.Now;
 
             polizaNego.Guardar(poliza);
+            string url = "ListarPolizas.aspx";
+            Response.Redirect(url);
         }
+
 
         private void CargarCombos()
         {
@@ -61,6 +68,11 @@ namespace Presentacion
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             Guardar();
+        }
+
+        protected void gdvPoliza_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
         }
     }
 }

@@ -45,7 +45,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Polizas <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="AltaPolizas.aspx">Crear Polizas</a></li>
-                                <li><a href="#">Listar Polizas</a></li>
+                                <li><a href="ListarPolizas.aspx">Listar Polizas</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d998c7f488749418f4aa69389e4caf1" Name="Diagram1">
+        <EntityTypeShape EntityType="segurosModel.Clientes" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.Companias" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.Marcas" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.Modelos" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.Polizas" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.TipoVehiculos" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="segurosModel.Vehiculos" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="segurosModel.FK__Polizas__cliente__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="segurosModel.FK__Polizas__compani__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="segurosModel.FK__Modelos__marcaId__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="segurosModel.FK__Modelos__tipoVeh__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="segurosModel.FK__Vehiculos__model__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="segurosModel.FK__Polizas__vehicul__47DBAE45" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
