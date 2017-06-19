@@ -25,6 +25,7 @@ namespace Presentacion
             {
                 int polizaId = int.Parse(e.CommandArgument.ToString());
                 polizaNego.BajaPoliza(polizaId);
+                CargarGrilla();
             }
 
         }
@@ -35,7 +36,7 @@ namespace Presentacion
             gdvPoliza.AutoGenerateColumns = false;
             gdvPoliza.DataSource = polizaNego.ListarPoliza();
             gdvPoliza.DataBind();
-            CargarGrilla();
+            
         }
     }
 }

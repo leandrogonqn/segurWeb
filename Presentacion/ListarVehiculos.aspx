@@ -18,12 +18,12 @@
                     <asp:BoundField HeaderText="Tipo" DataField="tipoVehiculoDescripcion" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:Button ID="Modificar" runat="server" ImageUrl="~/img/edit.png" CommandName="Modificar" CommandArgument='<%# Eval("vehiculoId")%>' Text="Modificar" />
+                            <asp:ImageButton  runat="server" ImageUrl="~/img/edit.png" CommandName="Modificar" CommandArgument='<%# Eval("vehiculoId")%>' />
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:Button ID="Borrar" runat="server" ImageUrl="~/img/delete.png" CommandName="Borrar" CommandArgument='<%# Eval("vehiculoId")%>' Text="Borrar" />
+                            <asp:ImageButton  runat="server" ImageUrl="~/img/delete.png" CommandName="Borrar" CommandArgument='<%# Eval("vehiculoId")%>' />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
