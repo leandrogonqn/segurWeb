@@ -35,6 +35,7 @@ namespace Presentacion
             gdvPoliza.AutoGenerateColumns = false;
             gdvPoliza.DataSource = polizaNego.ListarPoliza();
             gdvPoliza.DataBind();
+            CargarGrilla();
         }
     }
 }
