@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <asp:GridView ID="gdvPoliza" runat="server" CssClass=" table table-hover" AutoGenerateColumns="false" OnRowCommand="gdvPoliza_RowCommand" OnRowDataBound="gdvPoliza_RowDataBound" >
+        <asp:GridView ID="gdvPoliza" runat="server" CssClass=" table table-hover" AutoGenerateColumns="false" OnRowCommand="gdvPoliza_RowCommand"  >
             <Columns>
 
                 <asp:BoundField HeaderText="Número Poliza" DataField="polizaNumero" />

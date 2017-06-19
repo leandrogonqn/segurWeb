@@ -36,14 +36,5 @@ namespace Presentacion
             gdvPoliza.DataSource = polizaNego.ListarPoliza();
             gdvPoliza.DataBind();
         }
-
-        protected void gdvPoliza_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.DataRow) {
-
-
-
-            }
-        }
     }
 }

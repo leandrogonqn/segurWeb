@@ -40,7 +40,7 @@ namespace Repositorio
                var polizas = from p in context.Polizas
                                   join v in context.Vehiculos on p.vehiculoId equals v.vehiculoId
                                   join c in context.Clientes on p.clienteId equals c.clienteId
-                             //where p.polizaEstado == 1
+                             where p.polizaEstado == 1
                              select new{v.vehiculoDominio , c.clienteApellido,c.clienteNombre,p.polizaNumero ,p.polizaFechaVigencia,p.polizaId , p.polizaEstado } ;
 
                 foreach (var item in polizas)
