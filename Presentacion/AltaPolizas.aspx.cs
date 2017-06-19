@@ -36,7 +36,8 @@ namespace Presentacion
             poliza.polizaNumero = txtPolizaNumero.Text;
             poliza.polizaFechaAlta = DateTime.Now;
             poliza.polizaFechaVigencia = Convert.ToDateTime(dtFechaVigencia.Value);
-           poliza.polizaFechaBaja = DateTime.Now;
+            poliza.polizaEstado = 1;
+            poliza.polizaFechaBaja = DateTime.Now;
 
             polizaNego.Guardar(poliza);
             string url = "ListarPolizas.aspx";
