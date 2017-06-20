@@ -20,22 +20,6 @@ namespace Repositorio
             }
         }
 
-        public List<Vehiculos> listarVehiculos()
-        {
-            List<Vehiculos> vehiculosList = new List<Vehiculos>();
-
-            using (var context = new segurosEntities())
-            {
-                var query = from v in context.Vehiculos select v;
-                foreach (var item in query)
-                {
-                    vehiculosList.Add(item);
-                }
-
-            }
-            return vehiculosList;
-        }
-
         public void ModificarVehiculo(Vehiculos vehiculos)
         {
             using (segurosEntities context = new segurosEntities())
@@ -64,7 +48,7 @@ namespace Repositorio
             }
         }
 
-        public Vehiculos BuscarVehiculo(int? vehiculoId)
+        public Vehiculos BuscarVehiculo(int vehiculoId)
         {
             Vehiculos vehiculo;
             using (segurosEntities context = new segurosEntities())

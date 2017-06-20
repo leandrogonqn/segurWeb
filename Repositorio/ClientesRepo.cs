@@ -27,6 +27,7 @@ namespace Repositorio
             {
 
                 var query = from c in context.Clientes
+                            where c.clienteEstado == 1
                             select c;
                 foreach (var item in query)
                 {
@@ -35,6 +36,50 @@ namespace Repositorio
 
             }
             return clientesList;
+        }
+
+        public Clientes BuscarCliente(int clienteId)
+        {
+            Clientes cliente;
+            using (segurosEntities context = new segurosEntities())
+            {
+
+                cliente = (from v in context.Clientes
+                            where v.clienteId == clienteId
+                           select v).FirstOrDefault();
+
+            }
+            return cliente;
+        }
+
+        public void ModificarCliente(Clientes clientes)
+        {
+            using (segurosEntities context = new segurosEntities())
+            {
+                Clientes cli = (from v in context.Clientes
+                                   where v.clienteId == clientes.clienteId
+                                   select v).FirstOrDefault();
+                cli.clienteNombre = clientes.clienteNombre;
+                cli.clienteApellido = clientes.clienteApellido;
+                cli.clienteDni = clientes.clienteDni;
+                cli.clienteFechaNacimiento = clientes.clienteFechaNacimiento;
+                cli.clienteDomicilio = clientes.clienteDomicilio;
+                cli.clienteTelefono = clientes.clienteTelefono;
+                cli.clienteMail = clientes.clienteMail;
+                context.SaveChanges();
+            }
+        }
+
+        public void BorrarCliente(int clienteId)
+        {
+            using (segurosEntities context = new segurosEntities())
+            {
+                Clientes cli = (from v in context.Clientes
+                                   where v.clienteId == clienteId
+                                select v).FirstOrDefault();
+                cli.clienteEstado = 0;
+                context.SaveChanges();
+            }
         }
 
         public List<Clientes> LlenarComboCliente()

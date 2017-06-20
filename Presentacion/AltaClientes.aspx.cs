@@ -14,7 +14,7 @@ namespace Presentacion
         ClientesNego clientesNego = new ClientesNego();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack) return;
         }
 
         protected void btnGuardarCliente_Click(object sender, EventArgs e)

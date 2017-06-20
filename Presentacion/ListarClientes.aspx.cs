@@ -6,14 +6,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Dominio;
 using Negocio;
-using System.Data;
 
 namespace Presentacion
 {
-    public partial class ListarVehiculos : System.Web.UI.Page
+    public partial class ListarClientes : System.Web.UI.Page
     {
-
-        VehiculosNego vehiculosNego = new VehiculosNego();
+        ClientesNego clientesNego = new ClientesNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,25 +19,24 @@ namespace Presentacion
 
             CargarGrilla();
         }
-
         private void CargarGrilla()
         {
-            gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
-            gdvVehiculos.DataBind();
+            gdvClientes.DataSource = clientesNego.ListarClientes();
+            gdvClientes.DataBind();
         }
 
-        protected void gdvVehiculos_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gdvClientes_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "Modificar")
             {
-                int vehiculoId = int.Parse(e.CommandArgument.ToString());
-                string pagina = "ModificarVehiculos.aspx?vehiculoId=" + vehiculoId;
+                int clienteId = int.Parse(e.CommandArgument.ToString());
+                string pagina = "ModificarCliente.aspx?clienteId=" + clienteId;
                 Response.Redirect(pagina);
             }
             if (e.CommandName == "Borrar")
             {
-                int vehiculoId = int.Parse(e.CommandArgument.ToString());
-                vehiculosNego.BorrarVehiculo(vehiculoId);
+                int clienteId = int.Parse(e.CommandArgument.ToString());
+                clientesNego.BorrarCliente(clienteId);
                 CargarGrilla();
             }
         }

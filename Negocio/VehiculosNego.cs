@@ -28,7 +28,7 @@ namespace Negocio
             return vehiculosRepo.ListarVehiculos();
         }
 
-        public Vehiculos BuscarVehiculo(int? vehiculoId)
+        public Vehiculos BuscarVehiculo(int vehiculoId)
         {
             return vehiculosRepo.BuscarVehiculo(vehiculoId);
         }

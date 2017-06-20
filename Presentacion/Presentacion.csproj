@@ -110,7 +110,9 @@
     <Content Include="img\edit.png" />
     <Content Include="img\redirect.png" />
     <Content Include="img\Seguros.jpg" />
+    <Content Include="ListarClientes.aspx" />
     <Content Include="ListarPolizas.aspx" />
+    <Content Include="ModificarCliente.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -159,6 +161,13 @@
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListarClientes.aspx.cs">
+      <DependentUpon>ListarClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarClientes.aspx.designer.cs">
+      <DependentUpon>ListarClientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ListarPolizas.aspx.cs">
       <DependentUpon>ListarPolizas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +181,13 @@
     </Compile>
     <Compile Include="ListarVehiculos.aspx.designer.cs">
       <DependentUpon>ListarVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCliente.aspx.cs">
+      <DependentUpon>ModificarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarCliente.aspx.designer.cs">
+      <DependentUpon>ModificarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarVehiculos.aspx.cs">
       <DependentUpon>ModificarVehiculos.aspx</DependentUpon>

@@ -23,5 +23,25 @@ namespace Negocio
         {
             return clientesRepo.LlenarComboCliente();
         }
+
+        public List<Clientes> ListarClientes()
+        {
+            return clientesRepo.ListarClientes();
+        }
+
+        public Clientes BuscarCliente(int clienteId)
+        {
+            return clientesRepo.BuscarCliente(clienteId);
+        }
+
+        public void BorrarCliente(int clienteId)
+        {
+            clientesRepo.BorrarCliente(clienteId);
+        }
+
+        public void ModificarCliente(Clientes clientes)
+        {
+            clientesRepo.ModificarCliente(clientes);
+        }
     }
 }
