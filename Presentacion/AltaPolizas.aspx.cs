@@ -48,7 +48,7 @@ namespace Presentacion
         private void CargarCombos()
         {
             ddlCliente.DataSource = clienteNego.LlenarComboCliente();
-            ddlCliente.DataTextField = "clienteApellido";
+            ddlCliente.DataTextField = "nombreCompleto";
             ddlCliente.DataValueField = "clienteId";
             ddlCliente.DataBind();
             ddlCliente.Items.Insert(0, "Seleccione un cliente");
@@ -71,9 +71,5 @@ namespace Presentacion
             Guardar();
         }
 
-        protected void gdvPoliza_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-
-        }
     }
 }

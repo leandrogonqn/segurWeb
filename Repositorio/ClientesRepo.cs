@@ -82,15 +82,24 @@ namespace Repositorio
             }
         }
 
-        public List<Clientes> LlenarComboCliente()
+        public List<object> LlenarComboCliente()
         {
-            List<Clientes> clientesList = new List<Clientes>();
+            List<object> clientesList = new List<object>();
 
             using (var context = new segurosEntities())
             {
-               var query = from c in context.Clientes
-                            select c;
-                foreach (var item in query)
+                var name = from c in context.Clientes
+                           let nombreCompleto = c.clienteApellido + " " + c.clienteNombre + " " + c.clienteDni
+
+                           orderby c.clienteNombre
+                           select new
+                           {
+                               c.clienteId,
+                               nombreCompleto
+                           };
+
+
+                foreach (var item in name)
                 {
                     clientesList.Add(item);
                 }
@@ -98,5 +107,6 @@ namespace Repositorio
             }
             return clientesList;
         }
+
     }
 }

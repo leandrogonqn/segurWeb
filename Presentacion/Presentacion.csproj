@@ -113,6 +113,7 @@
     <Content Include="ListarClientes.aspx" />
     <Content Include="ListarPolizas.aspx" />
     <Content Include="ModificarCliente.aspx" />
+    <Content Include="ModificarPolizas.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -188,6 +189,13 @@
     </Compile>
     <Compile Include="ModificarCliente.aspx.designer.cs">
       <DependentUpon>ModificarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPolizas.aspx.cs">
+      <DependentUpon>ModificarPolizas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPolizas.aspx.designer.cs">
+      <DependentUpon>ModificarPolizas.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarVehiculos.aspx.cs">
       <DependentUpon>ModificarVehiculos.aspx</DependentUpon>

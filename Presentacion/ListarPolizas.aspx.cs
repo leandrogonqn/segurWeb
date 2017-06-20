@@ -28,6 +28,12 @@ namespace Presentacion
                 CargarGrilla();
             }
 
+            if (e.CommandName == "btnEditar")
+            {
+                int polizaId = int.Parse(e.CommandArgument.ToString());
+                string pagina = "ModificarPolizas.aspx?polizaId=" + polizaId;
+                Response.Redirect(pagina);
+            }
         }
 
 
@@ -36,7 +42,7 @@ namespace Presentacion
             gdvPoliza.AutoGenerateColumns = false;
             gdvPoliza.DataSource = polizaNego.ListarPoliza();
             gdvPoliza.DataBind();
-            
+
         }
     }
 }

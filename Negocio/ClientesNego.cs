@@ -19,7 +19,7 @@ namespace Negocio
             clientesRepo.GuardarClientes(cliente);
         }
 
-        public List<Clientes> LlenarComboCliente()
+        public List<object> LlenarComboCliente()
         {
             return clientesRepo.LlenarComboCliente();
         }

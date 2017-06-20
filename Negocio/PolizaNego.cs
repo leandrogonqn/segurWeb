@@ -20,6 +20,15 @@ namespace Negocio
             return polizaRepo.ListarPolizas();
         }
 
+        public void Modificar(Polizas poliza)
+        {
+            polizaRepo.Modificar(poliza);
+        }
+
+        public Polizas LlenarObjetoPoliza(int polizaId)
+        {
+            return polizaRepo.LlenarObjetoPoliza(polizaId);
+        }
         public void BajaPoliza(int polizaId)
         {
             polizaRepo.BajaPoliza(polizaId);
