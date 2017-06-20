@@ -36,6 +36,14 @@ namespace Presentacion
 
             clientesNego.GuardarClientes(clientes);
 
+            txtNombre.Text = String.Empty;
+            txtApellido.Text = String.Empty;
+            txtDni.Text = String.Empty;
+            txtFechaNacimiento.Text = String.Empty;
+            txtDomicilio.Text = String.Empty;
+            txtTelefono.Text = String.Empty;
+            txtEmail.Text = String.Empty;
+
         }
     }
 }

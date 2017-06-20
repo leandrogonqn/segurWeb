@@ -40,8 +40,12 @@ namespace Presentacion
             poliza.polizaFechaBaja = DateTime.Now;
 
             polizaNego.Guardar(poliza);
-            string url = "ListarPolizas.aspx";
-            Response.Redirect(url);
+
+            txtPolizaNumero.Text = String.Empty;
+            ddlCliente.SelectedIndex = 0;
+            ddlcompania.SelectedIndex = 0;
+            ddlVehiculo.SelectedIndex = 0;
+            dtFechaVigencia.Value = new DateTime().ToString();
         }
 
 
@@ -54,7 +58,7 @@ namespace Presentacion
             ddlCliente.Items.Insert(0, "Seleccione un cliente");
 
             ddlVehiculo.DataSource = vehiculoNego.CargarComboVehiculo();
-            ddlVehiculo.DataTextField = "vehiculoDominio";
+            ddlVehiculo.DataTextField = "vehiculoCompleto";
             ddlVehiculo.DataValueField = "vehiculoId";
             ddlVehiculo.DataBind();
             ddlVehiculo.Items.Insert(0, "Seleccione un Vehiculo");

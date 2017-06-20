@@ -62,15 +62,24 @@ namespace Repositorio
             return vehiculo;
         }
 
-        public List<Vehiculos> LlenarComboVehiculo()
+        public List<object> CargarComboVehiculo()
         {
-            List<Vehiculos> vehiculoList = new List<Vehiculos>();
+            List<object> vehiculoList = new List<object>();
 
             using (var context = new segurosEntities())
             {
 
                 var query = from c in context.Vehiculos
-                            select c;
+                            join m in context.Modelos on c.modeloId equals m.modeloId
+                            join ma in context.Marcas on m.marcaId equals ma.marcaId
+                            let vehiculoCompleto = c.vehiculoDominio + " " + ma.marcaDescripcion + " " + m.modeloDescripcion
+                            orderby c.vehiculoDominio
+                            where c.vehiculoEstado == 1
+                            select new
+                            {
+                                c.vehiculoId,
+                                vehiculoCompleto
+                            };
                 foreach (var item in query)
                 {
                     vehiculoList.Add(item);

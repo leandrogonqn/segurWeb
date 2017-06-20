@@ -18,9 +18,9 @@ namespace Negocio
             vehiculosRepo.GuardarVehiculos(vehiculo);
         }
         
-        public List<Vehiculos> CargarComboVehiculo()
+        public List<object> CargarComboVehiculo()
         {
-            return vehiculosRepo.LlenarComboVehiculo();
+            return vehiculosRepo.CargarComboVehiculo();
         }
 
         public List<object> ListarVehiculos()

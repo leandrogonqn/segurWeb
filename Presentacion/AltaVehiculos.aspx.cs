@@ -42,7 +42,8 @@ namespace Presentacion
             txtAño.Text = String.Empty;
             txtNumeroChasis.Text = String.Empty;
             txtNumeroMotor.Text = String.Empty;
-
+            ddlMarca.SelectedIndex = 0;
+            ddlModelo.SelectedIndex = 0;
         }
 
         private void CargarCombosMarca()

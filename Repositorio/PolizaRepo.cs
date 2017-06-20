@@ -68,13 +68,25 @@ namespace Repositorio
         {
             List<object> listaPolizas = new List<object>();
             using (var context = new segurosEntities())
-            {
+            {   
 
                 var polizas = from p in context.Polizas
-                              join v in context.Vehiculos on p.vehiculoId equals v.vehiculoId
                               join c in context.Clientes on p.clienteId equals c.clienteId
+                              join v in context.Vehiculos on p.vehiculoId equals v.vehiculoId
+                              join m in context.Modelos on v.modeloId equals m.modeloId
+                              join ma in context.Marcas on m.marcaId equals ma.marcaId
                               where p.polizaEstado == 1
-                              select new { v.vehiculoDominio, c.clienteApellido, c.clienteNombre, p.polizaNumero, p.polizaFechaVigencia, p.polizaId, p.polizaEstado };
+                              select new
+                              {
+                                  p.polizaNumero,
+                                  p.polizaFechaVigencia,
+                                  p.polizaId,
+                                  c.clienteApellido,
+                                  c.clienteNombre,
+                                  v.vehiculoDominio,
+                                  ma.marcaDescripcion,
+                                  m.modeloDescripcion
+                              };
 
                 foreach (var item in polizas)
                 {

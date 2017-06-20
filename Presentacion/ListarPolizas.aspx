@@ -9,10 +9,11 @@
 
                 <asp:BoundField HeaderText="Número Poliza" DataField="polizaNumero" />
                 <asp:BoundField HeaderText="Poliza Fecha Vigencia" DataField="polizaFechaVigencia" />
-                <asp:BoundField HeaderText="Vehículo" DataField="vehiculoDominio" />
                 <asp:BoundField HeaderText="Cliente Nombre" DataField="clienteNombre" />
                 <asp:BoundField HeaderText="Cliente Apellido" DataField="clienteApellido" />
-                <asp:BoundField HeaderText="Poliza Estado" DataField="polizaEstado" />
+                <asp:BoundField HeaderText="Dominio" DataField="vehiculoDominio" />
+                <asp:BoundField HeaderText="Marca" DataField="marcaDescripcion" />
+                <asp:BoundField HeaderText="Modelo" DataField="modeloDescripcion" />
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:ImageButton runat="server" ImageUrl="~/img/edit.png" CommandName="btnEditar" CommandArgument='<%#Eval("polizaId") %>' />

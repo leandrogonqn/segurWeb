@@ -90,23 +90,19 @@ namespace Repositorio
             {
                 var name = from c in context.Clientes
                            let nombreCompleto = c.clienteApellido + " " + c.clienteNombre + " " + c.clienteDni
-
                            orderby c.clienteNombre
+                           where c.clienteEstado == 1
                            select new
                            {
                                c.clienteId,
                                nombreCompleto
                            };
-
-
                 foreach (var item in name)
                 {
                     clientesList.Add(item);
                 }
-
             }
             return clientesList;
         }
-
     }
 }
