@@ -4,96 +4,119 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Repositorio
 {
     public class PolizaRepo
     {
+        public static string conexion = ConfigurationManager.ConnectionStrings["seguros"].ConnectionString;
+        SqlConnection con = new SqlConnection(conexion);
         public void Guardar(Polizas poliza)
         {
-            using (segurosEntities context = new segurosEntities())
-            {
-                context.Polizas.Add(poliza);
-                context.SaveChanges();
-            };
+            con.Open();
+            SqlCommand cmd = new SqlCommand("InsertarPoliza", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter vehiculoId = cmd.Parameters.Add("@vehiculoId", SqlDbType.VarChar);
+            vehiculoId.Value = poliza.vehiculoId;
+            SqlParameter clienteId = cmd.Parameters.Add("@clienteId", SqlDbType.VarChar);
+            clienteId.Value = poliza.clienteId;
+            SqlParameter polizaFechaAlta = cmd.Parameters.Add("@polizaFechaAlta", SqlDbType.VarChar);
+            polizaFechaAlta.Value = poliza.polizaFechaAlta;
+            SqlParameter polizaFechaVigencia = cmd.Parameters.Add("@polizaFechaVigencia", SqlDbType.VarChar);
+            polizaFechaVigencia.Value = poliza.polizaFechaVigencia;
+            SqlParameter polizaFechaBaja = cmd.Parameters.Add("@polizaFechaBaja", SqlDbType.VarChar);
+            polizaFechaBaja.Value = poliza.polizaFechaBaja;
+            SqlParameter companiaId = cmd.Parameters.Add("@companiaId", SqlDbType.VarChar);
+            companiaId.Value = poliza.companiaId;
+            SqlParameter polizaEstado = cmd.Parameters.Add("@polizaEstado", SqlDbType.VarChar);
+            polizaEstado.Value = poliza.polizaEstado;
+            SqlParameter polizaNumero = cmd.Parameters.Add("@polizaNumero", SqlDbType.VarChar);
+            polizaEstado.Value = poliza.polizaNumero;
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public void BajaPoliza(int polizaId)
         {
-            using (segurosEntities context = new segurosEntities())
-            {
-                Polizas poliza = (from p in context.Polizas
-                                  where p.polizaId == polizaId
-                                  select p).FirstOrDefault();
-                poliza.polizaEstado = 0;
-                poliza.polizaFechaBaja = DateTime.Now;
-                context.SaveChanges();
-            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand("EliminarPoliza", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter polizId = cmd.Parameters.Add("@polizaId", SqlDbType.Int);
+            polizId.Value = polizaId;
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public void Modificar(Polizas poliza)
         {
-            using (segurosEntities context = new segurosEntities())
-            {
-                Polizas polizaa = (from p in context.Polizas
-                                   where p.polizaId == poliza.polizaId
-                                   select p).FirstOrDefault();
-
-                polizaa.polizaNumero = poliza.polizaNumero;
-                polizaa.polizaFechaVigencia = poliza.polizaFechaVigencia;
-                polizaa.clienteId = poliza.clienteId;
-                polizaa.vehiculoId = poliza.vehiculoId;
-                polizaa.companiaId = poliza.companiaId;
-                context.SaveChanges();
-            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand("ModificarPoliza", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter polizaId = cmd.Parameters.Add("@polizaId", SqlDbType.VarChar);
+            polizaId.Value = poliza.polizaId;
+            SqlParameter vehiculoId = cmd.Parameters.Add("@vehiculoId", SqlDbType.VarChar);
+            vehiculoId.Value = poliza.vehiculoId;
+            SqlParameter clienteId = cmd.Parameters.Add("@clienteId", SqlDbType.VarChar);
+            clienteId.Value = poliza.clienteId;
+            SqlParameter polizaFechaVigencia = cmd.Parameters.Add("@polizaFechaVigencia", SqlDbType.VarChar);
+            polizaFechaVigencia.Value = poliza.polizaFechaVigencia;
+            SqlParameter polizaFechaBaja = cmd.Parameters.Add("@polizaFechaBaja", SqlDbType.VarChar);
+            polizaFechaBaja.Value = poliza.polizaFechaBaja;
+            SqlParameter companiaId = cmd.Parameters.Add("@companiaId", SqlDbType.VarChar);
+            companiaId.Value = poliza.companiaId;
+            SqlParameter polizaEstado = cmd.Parameters.Add("@polizaEstado", SqlDbType.VarChar);
+            polizaEstado.Value = poliza.polizaEstado;
+            SqlParameter polizaNumero = cmd.Parameters.Add("@polizaNumero", SqlDbType.VarChar);
+            polizaNumero.Value = poliza.polizaNumero;
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public Polizas LlenarObjetoPoliza(int? polizaId)
         {
-            Polizas poliza;
-            using (segurosEntities context = new segurosEntities())
+            Polizas poliza = new Polizas();
+            con.Open();
+            DataTable dtPoliza = new DataTable();
+
+            SqlCommand cmd = new SqlCommand("BuscarPoliza", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter polizId = cmd.Parameters.Add("@polizaId", SqlDbType.Int);
+            polizId.Value = polizaId;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtPoliza);
+            con.Close();
+
+
+            foreach (DataRow data in dtPoliza.Rows)
             {
-
-                poliza = (from p in context.Polizas
-                          where p.polizaId == polizaId
-                          select p).FirstOrDefault();
-
+                poliza.vehiculoId = int.Parse(data["vehiculoId"].ToString());
+                poliza.clienteId = int.Parse(data["clienteId"].ToString());
+                poliza.polizaFechaAlta = DateTime.Parse(data["polizaFechaAlta"].ToString());
+                poliza.polizaFechaVigencia = DateTime.Parse(data["polizaFechaVigencia"].ToString());
+                poliza.polizaFechaBaja = DateTime.Parse(data["polizaFechaBaja"].ToString());
+                poliza.companiaId = int.Parse(data["companiaId"].ToString());
+                poliza.polizaEstado = int.Parse(data["polizaEstado"].ToString());
+                poliza.polizaNumero = data["polizaNumero"].ToString();
             }
+            con.Close();
             return poliza;
         }
 
 
 
-        public List<object> ListarPolizas()
+        public DataSet ListarPolizas()
         {
-            List<object> listaPolizas = new List<object>();
-            using (var context = new segurosEntities())
-            {   
-
-                var polizas = from p in context.Polizas
-                              join c in context.Clientes on p.clienteId equals c.clienteId
-                              join v in context.Vehiculos on p.vehiculoId equals v.vehiculoId
-                              join m in context.Modelos on v.modeloId equals m.modeloId
-                              join ma in context.Marcas on m.marcaId equals ma.marcaId
-                              where p.polizaEstado == 1
-                              select new
-                              {
-                                  p.polizaNumero,
-                                  p.polizaFechaVigencia,
-                                  p.polizaId,
-                                  c.clienteApellido,
-                                  c.clienteNombre,
-                                  v.vehiculoDominio,
-                                  ma.marcaDescripcion,
-                                  m.modeloDescripcion
-                              };
-
-                foreach (var item in polizas)
-                {
-                    listaPolizas.Add(item);
-                }
-            }
-            return listaPolizas;
+            con.Open();
+            DataSet dtListarPolizas = new DataSet();
+            SqlCommand cmd = new SqlCommand("ListarPolizas", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtListarPolizas);
+            con.Close();
+            return dtListarPolizas;
         }
     }
 }

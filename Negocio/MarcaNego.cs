@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using Repositorio;
+using System.Data;
 
 namespace Negocio
 {
@@ -12,7 +13,7 @@ namespace Negocio
     {
         MarcaRepo marcaRepo = new MarcaRepo();
 
-        public List<Marcas> CargarComboMarca()
+        public DataSet CargarComboMarca()
         {
             return marcaRepo.CargarComboMarca();
         }

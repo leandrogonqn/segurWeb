@@ -18,12 +18,12 @@ namespace Negocio
             vehiculosRepo.GuardarVehiculos(vehiculo);
         }
         
-        public List<object> CargarComboVehiculo()
+        public DataSet CargarComboVehiculo()
         {
             return vehiculosRepo.CargarComboVehiculo();
         }
 
-        public List<object> ListarVehiculos()
+        public DataSet ListarVehiculos()
         {
             return vehiculosRepo.ListarVehiculos();
         }

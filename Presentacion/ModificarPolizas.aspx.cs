@@ -46,7 +46,7 @@ namespace Presentacion
             ddlCliente.Items.Insert(0, "Seleccione un cliente");
 
             ddlVehiculo.DataSource = vehiculoNego.CargarComboVehiculo();
-            ddlVehiculo.DataTextField = "vehiculoDominio";
+            ddlVehiculo.DataTextField = "vehiculoCompleto";
             ddlVehiculo.DataValueField = "vehiculoId";
             ddlVehiculo.DataBind();
             ddlVehiculo.Items.Insert(0, "Seleccione un Vehiculo");

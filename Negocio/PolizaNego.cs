@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 using Repositorio;
+using System.Data;
 
 namespace Negocio
 {
@@ -15,7 +16,7 @@ namespace Negocio
         {
             polizaRepo.Guardar(poliza);
         }
-        public List<object> ListarPoliza()
+        public DataSet ListarPoliza()
         {
             return polizaRepo.ListarPolizas();
         }

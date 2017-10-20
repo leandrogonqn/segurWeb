@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Repositorio;
 using Dominio;
+using System.Data;
 
 
 namespace Negocio
@@ -13,7 +14,7 @@ namespace Negocio
     {
         CompaniaRepo companiaRepo = new CompaniaRepo();
 
-        public List<Companias> LlenarComboCompanias()
+        public DataSet LlenarComboCompanias()
         {
             return companiaRepo.LlenarComboCompanias();
         }

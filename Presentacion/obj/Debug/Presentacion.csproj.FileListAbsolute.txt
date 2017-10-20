@@ -127,3 +127,5 @@ C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\bin\R
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Newtonsoft.Json.dll
+C:\Users\Lean\documents\visual studio 2015\Projects\SegurWeb\Presentacion\bin\Newtonsoft.Json.xml

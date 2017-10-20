@@ -28,7 +28,7 @@ namespace Presentacion
             txtNombre.Text = clientes.clienteNombre.ToString();
             txtDni.Text = clientes.clienteDni.ToString();
             txtFechaNacimiento.Text = DateTime.Parse(clientes.clienteFechaNacimiento.ToString()).ToString("yyyy-MM-dd");
-            txtDomicilio.Text = clientes.clienteDomicilio.ToString();
+            txtDomicilio.Text = clientes.clienteDomicilio;
             txtTelefono.Text = clientes.clienteTelefono.ToString();
             txtEmail.Text = clientes.clienteMail.ToString();
         }
