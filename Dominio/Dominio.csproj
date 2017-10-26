@@ -58,6 +58,7 @@
     <Compile Include="Companias.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Email.cs" />
     <Compile Include="Marcas.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

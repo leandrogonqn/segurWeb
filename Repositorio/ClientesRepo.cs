@@ -50,7 +50,7 @@ namespace Repositorio
             return clientesList;
         }
 
-        public Clientes BuscarCliente(int clienteId)
+        public Clientes BuscarCliente(int? clienteId)
         {
             Clientes cliente = new Clientes();
             con.Open();

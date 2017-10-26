@@ -41,6 +41,12 @@ namespace Presentacion
 
             polizaNego.Guardar(poliza);
 
+            //Envio de mail confirmatorio
+            Clientes cliente = clienteNego.BuscarCliente(poliza.clienteId);
+            String mensaj = "Buenos días Sr/a. "+cliente.clienteApellido+ ", \nLa poliza de su vehiculo ya fue generada exitosamente, en los proximos días se la estaremos acercando a su domicilio.\n \nSaludos cordiales.\n\nPacinetes S.R.L.";
+            Email mail = new Email();
+            mail.enviarMail("sistemasigese@gmail.com", cliente.clienteMail, "su poliza ya está emitida", mensaj);
+
             txtPolizaNumero.Text = String.Empty;
             ddlCliente.SelectedIndex = 0;
             ddlcompania.SelectedIndex = 0;

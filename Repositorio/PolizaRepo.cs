@@ -34,7 +34,7 @@ namespace Repositorio
             SqlParameter polizaEstado = cmd.Parameters.Add("@polizaEstado", SqlDbType.VarChar);
             polizaEstado.Value = poliza.polizaEstado;
             SqlParameter polizaNumero = cmd.Parameters.Add("@polizaNumero", SqlDbType.VarChar);
-            polizaEstado.Value = poliza.polizaNumero;
+            polizaNumero.Value = poliza.polizaNumero;
             cmd.ExecuteNonQuery();
             con.Close();
         }

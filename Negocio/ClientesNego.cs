@@ -29,7 +29,7 @@ namespace Negocio
             return clientesRepo.ListarClientes();
         }
 
-        public Clientes BuscarCliente(int clienteId)
+        public Clientes BuscarCliente(int? clienteId)
         {
             return clientesRepo.BuscarCliente(clienteId);
         }

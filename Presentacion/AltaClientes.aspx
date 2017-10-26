@@ -58,6 +58,7 @@
                     <div class="col-md-4">
                         <asp:Button ID="btnGuardarCliente" runat="server" Text="Guardar" class="btn btn-primary" OnClick="btnGuardarCliente_Click" />
                     </div>
+                    
                     <div class="col-md-4">
                     </div>
                 </div>
