@@ -26,7 +26,7 @@
                     </div>
                     <asp:Label ID="lblModelo" runat="server" Text="Fecha de Nacimiento:" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-4">
-                        <asp:TextBox ID="txtFechaNacimiento" type="date" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="fechaPicker"></asp:TextBox>
                     </div>
                 </div>
 

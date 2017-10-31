@@ -31,3 +31,14 @@ C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\bin\Debug\
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.dll
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Negocio\obj\Debug\Negocio.pdb
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Negocio.dll
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Negocio.pdb
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Dominio.dll
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Repositorio.dll
+C:\webBorrar\segurWeb\Negocio\bin\Debug\EntityFramework.dll
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Dominio.pdb
+C:\webBorrar\segurWeb\Negocio\bin\Debug\Repositorio.pdb
+C:\webBorrar\segurWeb\Negocio\bin\Debug\EntityFramework.xml
+C:\webBorrar\segurWeb\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\webBorrar\segurWeb\Negocio\obj\Debug\Negocio.dll
+C:\webBorrar\segurWeb\Negocio\obj\Debug\Negocio.pdb

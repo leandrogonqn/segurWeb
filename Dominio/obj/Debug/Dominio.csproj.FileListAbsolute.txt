@@ -28,3 +28,13 @@ C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.dll
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.pdb
 C:\Users\Lean\Documents\Visual Studio 2015\Projects\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\webBorrar\segurWeb\Dominio\bin\Debug\Dominio.dll.config
+C:\webBorrar\segurWeb\Dominio\bin\Debug\Dominio.dll
+C:\webBorrar\segurWeb\Dominio\bin\Debug\Dominio.pdb
+C:\webBorrar\segurWeb\Dominio\bin\Debug\EntityFramework.dll
+C:\webBorrar\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\webBorrar\segurWeb\Dominio\bin\Debug\EntityFramework.xml
+C:\webBorrar\segurWeb\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\webBorrar\segurWeb\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\webBorrar\segurWeb\Dominio\obj\Debug\Dominio.dll
+C:\webBorrar\segurWeb\Dominio\obj\Debug\Dominio.pdb

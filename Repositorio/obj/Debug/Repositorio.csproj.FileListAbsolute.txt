@@ -22,3 +22,11 @@ C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\bin\De
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.dll
 C:\Users\nacho\Documents\Visual Studio 2015\Projects\segurWeb\Repositorio\obj\Debug\Repositorio.pdb
+C:\webBorrar\segurWeb\Repositorio\bin\Debug\Repositorio.dll
+C:\webBorrar\segurWeb\Repositorio\bin\Debug\Repositorio.pdb
+C:\webBorrar\segurWeb\Repositorio\bin\Debug\Dominio.dll
+C:\webBorrar\segurWeb\Repositorio\bin\Debug\Dominio.pdb
+C:\webBorrar\segurWeb\Repositorio\bin\Debug\EntityFramework.xml
+C:\webBorrar\segurWeb\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\webBorrar\segurWeb\Repositorio\obj\Debug\Repositorio.dll
+C:\webBorrar\segurWeb\Repositorio\obj\Debug\Repositorio.pdb
