@@ -107,10 +107,10 @@ namespace Repositorio
 
 
 
-        public DataSet ListarPolizas()
+        public DataTable ListarPolizas()
         {
             con.Open();
-            DataSet dtListarPolizas = new DataSet();
+            DataTable dtListarPolizas = new DataTable();
             SqlCommand cmd = new SqlCommand("ListarPolizas", con);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);

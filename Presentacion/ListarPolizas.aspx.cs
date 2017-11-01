@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
 using Dominio;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 
 namespace Presentacion
 {
@@ -16,7 +18,6 @@ namespace Presentacion
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
-            CargarGrilla();
         }
 
         protected void gdvPoliza_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -25,7 +26,6 @@ namespace Presentacion
             {
                 int polizaId = int.Parse(e.CommandArgument.ToString());
                 polizaNego.BajaPoliza(polizaId);
-                CargarGrilla();
             }
 
             if (e.CommandName == "btnEditar")
@@ -37,12 +37,10 @@ namespace Presentacion
         }
 
 
-        private void CargarGrilla()
+        public string pasarAJson()
         {
-            gdvPoliza.AutoGenerateColumns = false;
-            gdvPoliza.DataSource = polizaNego.ListarPoliza();
-            gdvPoliza.DataBind();
-
+            string json = JsonConvert.SerializeObject(polizaNego.ListarPoliza(), Formatting.Indented);
+            return json;
         }
     }
 }

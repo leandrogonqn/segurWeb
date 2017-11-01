@@ -23,7 +23,7 @@ namespace Negocio
             return vehiculosRepo.CargarComboVehiculo();
         }
 
-        public DataSet ListarVehiculos()
+        public DataTable ListarVehiculos()
         {
             return vehiculosRepo.ListarVehiculos();
         }

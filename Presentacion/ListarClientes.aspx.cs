@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Dominio;
 using Negocio;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 
 namespace Presentacion
 {
@@ -16,13 +18,12 @@ namespace Presentacion
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
-
-            CargarGrilla();
         }
-        private void CargarGrilla()
+
+        public string pasarAJson()
         {
-            gdvClientes.DataSource = clientesNego.ListarClientes();
-            gdvClientes.DataBind();
+            string json = JsonConvert.SerializeObject(clientesNego.ListarClientes(), Formatting.Indented);
+            return json;
         }
 
         protected void gdvClientes_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -37,7 +38,6 @@ namespace Presentacion
             {
                 int clienteId = int.Parse(e.CommandArgument.ToString());
                 clientesNego.BorrarCliente(clienteId);
-                CargarGrilla();
             }
         }
     }

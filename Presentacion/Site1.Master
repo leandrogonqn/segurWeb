@@ -10,16 +10,19 @@
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap-table-master/src/bootstrap-table.css">
 </head>
 
 <body>
-<script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/moment.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/select2.js"></script>
     <link href="css/select2.css" rel="stylesheet" />
+    <script src="bootstrap-table-master/src/bootstrap-table.js"></script>
+    <script src="bootstrap-table-master/src/locale/bootstrap-table-es-AR.js"></script>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>

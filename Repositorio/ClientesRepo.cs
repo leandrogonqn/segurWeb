@@ -39,9 +39,9 @@ namespace Repositorio
             con.Close();
         }
 
-        public DataSet ListarClientes()
+        public DataTable ListarClientes()
         {
-            DataSet clientesList = new DataSet();
+            DataTable clientesList = new DataTable();
             SqlCommand cmd = new SqlCommand("ListarClientes", con);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);

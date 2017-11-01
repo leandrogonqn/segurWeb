@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using Dominio;
 using Negocio;
 using System.Data;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 
 namespace Presentacion
 {
@@ -19,13 +21,13 @@ namespace Presentacion
         {
             if (IsPostBack) return;
 
-            CargarGrilla();
+            
         }
 
-        private void CargarGrilla()
+        public string pasarAJson()
         {
-            gdvVehiculos.DataSource = vehiculosNego.ListarVehiculos();
-            gdvVehiculos.DataBind();
+            string json = JsonConvert.SerializeObject(vehiculosNego.ListarVehiculos(), Formatting.Indented);
+            return json;
         }
 
         protected void gdvVehiculos_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -40,7 +42,6 @@ namespace Presentacion
             {
                 int vehiculoId = int.Parse(e.CommandArgument.ToString());
                 vehiculosNego.BorrarVehiculo(vehiculoId);
-                CargarGrilla();
             }
         }
     }

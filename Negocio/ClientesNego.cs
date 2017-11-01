@@ -24,7 +24,7 @@ namespace Negocio
             return clientesRepo.LlenarComboCliente();
         }
 
-        public DataSet ListarClientes()
+        public DataTable ListarClientes()
         {
             return clientesRepo.ListarClientes();
         }

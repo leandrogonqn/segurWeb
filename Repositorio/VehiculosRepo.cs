@@ -116,10 +116,10 @@ namespace Repositorio
             return dtComboVehiculo;
         }
 
-        public DataSet ListarVehiculos()
+        public DataTable ListarVehiculos()
         {
             con.Open();
-            DataSet dtListarVehiculos = new DataSet();
+            DataTable dtListarVehiculos = new DataTable();
             SqlCommand cmd = new SqlCommand("ListarVehiculos", con);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);

@@ -16,7 +16,7 @@ namespace Negocio
         {
             polizaRepo.Guardar(poliza);
         }
-        public DataSet ListarPoliza()
+        public DataTable ListarPoliza()
         {
             return polizaRepo.ListarPolizas();
         }
