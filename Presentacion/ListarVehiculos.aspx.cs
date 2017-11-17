@@ -24,25 +24,15 @@ namespace Presentacion
             
         }
 
+        public void remove(int vehiculoId)
+        {
+            vehiculosNego.BorrarVehiculo(vehiculoId);
+        }
+
         public string pasarAJson()
         {
             string json = JsonConvert.SerializeObject(vehiculosNego.ListarVehiculos(), Formatting.Indented);
             return json;
-        }
-
-        protected void gdvVehiculos_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "Modificar")
-            {
-                int vehiculoId = int.Parse(e.CommandArgument.ToString());
-                string pagina = "ModificarVehiculos.aspx?vehiculoId=" + vehiculoId;
-                Response.Redirect(pagina);
-            }
-            if (e.CommandName == "Borrar")
-            {
-                int vehiculoId = int.Parse(e.CommandArgument.ToString());
-                vehiculosNego.BorrarVehiculo(vehiculoId);
-            }
         }
     }
 }

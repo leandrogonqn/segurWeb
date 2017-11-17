@@ -561,6 +561,7 @@
     <Content Include="bootstrap-table-master\src\locale\bootstrap-table-vi-VN.js" />
     <Content Include="bootstrap-table-master\src\locale\bootstrap-table-zh-CN.js" />
     <Content Include="bootstrap-table-master\src\locale\bootstrap-table-zh-TW.js" />
+    <Content Include="BorrarVehiculos.aspx" />
     <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.css" />
@@ -815,6 +816,13 @@
     </Compile>
     <Compile Include="AltaVehiculos.aspx.designer.cs">
       <DependentUpon>AltaVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarVehiculos.aspx.cs">
+      <DependentUpon>BorrarVehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarVehiculos.aspx.designer.cs">
+      <DependentUpon>BorrarVehiculos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>

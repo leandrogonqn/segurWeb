@@ -27,7 +27,7 @@
                     <th data-field="vehiculoNumeroChasis">N° de chasis</th>
                     <th data-field="vehiculoNumeroMotor">N° motor</th>
                     <th data-field="tipoVehiculoDescripcion">Vehiculo</th>
-                    <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents" data-align="center" data-width="100">Acciones</th>
+                    <th data-field="operate" data-formatter="operateFormatter" events: "operateEvents" data-align="center" data-width="100">Acciones</th>
                 </tr>
             </thead>
         </table>
@@ -45,30 +45,26 @@
                       
         ]
  
-
         function operateFormatter(value, row, index) {
             return [
         
-                '<a href="javascript:void(0)" title="Editar">',
+                '<a href="ModificarVehiculos.aspx?vehiculoId='+row.vehiculoId+'" title="Editar">',
                     '<i class="glyphicon glyphicon-edit"></i>',
                 '</a>',
-                '<a href="javascript:void(0)" title="Eliminar">',
-                    '<i class="glyphicon glyphicon-remove"></i>',
+                '<a class="remove" href="BorrarVehiculos.aspx?vehiculoId='+row.vehiculoId+'" title="Remove">',
+                '<i class="glyphicon glyphicon-remove"></i>',
                 '</a>'
             ].join('');
         }
 
-        window.operateEvents = {
-            'click .editar': function (e, value, row, index) {
-                alert('Prueba');
-            },
-            'click .eliminar': function (e, value, row, index) {
-                $table.bootstrapTable('remove', {
-                    field: 'vehiculoId',
-                    values: [row.vehiculoId]
-                });
-            }
+            window.operateEvents = {
+        'click .remove': function (e, value, row, index) {
+            $table.bootstrapTable('remove', {
+                field: 'vehiculoId',
+                values: [row.vehiculoId]
+            });
         }
+    };
 
     </script>
 
